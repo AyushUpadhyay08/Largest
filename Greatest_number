@@ -1,0 +1,16 @@
+#to find greatest among three numbers using ternary operator.
+import java.util.*;
+class J
+{
+    public static void main(String args[])
+    {
+        Scanner ob=new Scanner(System.in);
+        int a,b,c;
+        String s;
+        a = ob.nextInt();
+        b = ob.nextInt();
+        c = ob.nextInt();
+        s = a > b && a>c ? "a is greater than b and c" : b > a && b>c ? "b is greater than a and c" : c>a && c>b ?"c is greater than a and b":"all three are equal";
+        System.out.print(s);
+    }
+}
